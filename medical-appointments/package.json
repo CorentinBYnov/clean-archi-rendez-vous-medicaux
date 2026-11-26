@@ -1,5 +1,5 @@
 {
-  "name": "metier-service",
+  "name": "medical-appointments",
   "version": "1.0.0",
   "private": true,
   "type": "module",

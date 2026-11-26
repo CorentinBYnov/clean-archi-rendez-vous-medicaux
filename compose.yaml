@@ -8,7 +8,7 @@ services:
     volumes:
       - ./postgres/init.sh:/docker-entrypoint-initdb.d/init.sh:ro
       - ./auth-service/db/schema.sql:/schemas/auth.sql:ro
-      - ./metier-service/db/schema.sql:/schemas/metier.sql:ro
+      - ./medical-appointments/db/schema.sql:/schemas/metier.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U app"]
       interval: 2s
