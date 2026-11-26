@@ -37,8 +37,8 @@ services:
 
   # Service métier : dans n'importe quel langage, construit par son Dockerfile (voir README,
   # « Contrat d'intégration »).
-  metier-service:
-    build: ./metier-service
+  medical-appointments:
+    build: ./medical-appointments
     environment:
       DATABASE_URL: postgres://app:app@postgres:5432/metier
       AMQP_URL: amqp://guest:guest@rabbitmq:5672/
